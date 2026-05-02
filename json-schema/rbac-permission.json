@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/rbac/refs/heads/main/json-schema/rbac-permission.json",
+  "title": "RBAC Permission",
+  "description": "A discrete authorization to perform an action on a resource within a Role-Based Access Control system.",
+  "type": "object",
+  "required": ["id", "action", "resource"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the permission."
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable name of the permission."
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of what this permission allows."
+    },
+    "action": {
+      "type": "string",
+      "description": "The action being permitted (e.g., read, write, delete, execute)."
+    },
+    "resource": {
+      "type": "string",
+      "description": "The resource or resource type the action applies to."
+    },
+    "conditions": {
+      "type": "object",
+      "description": "Optional attribute-based conditions that must be satisfied for the permission to apply.",
+      "additionalProperties": true
+    }
+  }
+}

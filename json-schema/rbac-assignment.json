@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/rbac/refs/heads/main/json-schema/rbac-assignment.json",
+  "title": "RBAC Role Assignment",
+  "description": "An association between a principal (user, group, or service account) and a role within a Role-Based Access Control system.",
+  "type": "object",
+  "required": ["principalId", "roleId"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the assignment."
+    },
+    "principalId": {
+      "type": "string",
+      "description": "Identifier of the user, group, or service account being assigned the role."
+    },
+    "principalType": {
+      "type": "string",
+      "enum": ["user", "group", "service_account"],
+      "description": "Type of principal."
+    },
+    "roleId": {
+      "type": "string",
+      "description": "Identifier of the role being assigned."
+    },
+    "scope": {
+      "type": "string",
+      "description": "Scope of the assignment (e.g., global, organization, project, resource)."
+    },
+    "grantedBy": {
+      "type": "string",
+      "description": "Identifier of the principal that granted this assignment."
+    },
+    "grantedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Optional expiration timestamp for time-limited assignments."
+    }
+  }
+}
