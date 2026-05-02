@@ -1,0 +1,54 @@
+{
+  "name": "RBAC Role Assignment",
+  "description": "Structure documentation for an RBAC role assignment — the binding of a principal (user, group, or service account) to a role.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "required": false,
+      "description": "Unique identifier for the assignment record."
+    },
+    {
+      "name": "principalId",
+      "type": "string",
+      "required": true,
+      "description": "Identifier of the user, group, or service account being assigned the role."
+    },
+    {
+      "name": "principalType",
+      "type": "string (enum: user, group, service_account)",
+      "required": false,
+      "description": "Type of principal receiving the role."
+    },
+    {
+      "name": "roleId",
+      "type": "string",
+      "required": true,
+      "description": "Identifier of the role being assigned."
+    },
+    {
+      "name": "scope",
+      "type": "string",
+      "required": false,
+      "description": "Scope of the assignment — global, organization, project, or resource."
+    },
+    {
+      "name": "grantedBy",
+      "type": "string",
+      "required": false,
+      "description": "Identifier of the principal that granted this assignment."
+    },
+    {
+      "name": "grantedAt",
+      "type": "string (date-time)",
+      "required": false,
+      "description": "ISO 8601 timestamp when the assignment was granted."
+    },
+    {
+      "name": "expiresAt",
+      "type": "string (date-time)",
+      "required": false,
+      "description": "Optional expiration timestamp for time-limited role assignments."
+    }
+  ]
+}

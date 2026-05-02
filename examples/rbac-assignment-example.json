@@ -1,0 +1,12 @@
+{
+  "@context": "https://raw.githubusercontent.com/api-evangelist/rbac/refs/heads/main/json-ld/rbac-context.jsonld",
+  "@type": "RoleAssignment",
+  "id": "assignment-9f3c2a1b",
+  "principalId": "user-jane-doe",
+  "principalType": "user",
+  "roleId": "role-content-editor",
+  "scope": "project:website-2026",
+  "grantedBy": "user-admin",
+  "grantedAt": "2026-01-10T08:00:00Z",
+  "expiresAt": "2026-12-31T23:59:59Z"
+}

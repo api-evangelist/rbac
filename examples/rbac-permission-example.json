@@ -1,0 +1,13 @@
+{
+  "@context": "https://raw.githubusercontent.com/api-evangelist/rbac/refs/heads/main/json-ld/rbac-context.jsonld",
+  "@type": "Permission",
+  "id": "perm-content-publish",
+  "name": "Publish Content",
+  "description": "Allows publishing content items to the public-facing site.",
+  "action": "publish",
+  "resource": "content",
+  "conditions": {
+    "status": "draft",
+    "ownedBy": "{{principalId}}"
+  }
+}

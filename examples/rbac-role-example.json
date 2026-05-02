@@ -1,0 +1,17 @@
+{
+  "@context": "https://raw.githubusercontent.com/api-evangelist/rbac/refs/heads/main/json-ld/rbac-context.jsonld",
+  "@type": "Role",
+  "id": "role-content-editor",
+  "name": "Content Editor",
+  "description": "Can create, update, and publish content but cannot delete content or manage users.",
+  "permissions": [
+    "perm-content-read",
+    "perm-content-create",
+    "perm-content-update",
+    "perm-content-publish"
+  ],
+  "parents": ["role-content-viewer"],
+  "scope": "organization",
+  "created": "2024-01-15T09:00:00Z",
+  "modified": "2025-03-10T14:30:00Z"
+}

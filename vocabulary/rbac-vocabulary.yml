@@ -1,0 +1,157 @@
+aid: rbac
+name: RBAC Vocabulary
+description: >-
+  Domain vocabulary for Role-Based Access Control (RBAC) covering access control
+  models, core entities, authorization terms, and implementation patterns used
+  across operating systems, cloud platforms, databases, and APIs.
+created: '2026-05-02'
+modified: '2026-05-02'
+
+terms:
+
+  - term: RBAC
+    label: Role-Based Access Control
+    definition: >-
+      A security access-control paradigm that grants system access to users
+      based on their assigned roles rather than individual identities. Defined
+      formally by NIST/ANSI/INCITS 359-2004 and subsequent revisions.
+    tags:
+      - Authorization
+      - Security
+      - Access Control
+
+  - term: Role
+    label: Role
+    definition: >-
+      A named collection of permissions that can be assigned to one or more
+      principals. Roles abstract the relationship between users and permissions,
+      simplifying access management.
+    tags:
+      - Core Entity
+      - Authorization
+
+  - term: Permission
+    label: Permission
+    definition: >-
+      A discrete authorization to perform a specific action (verb) on a specific
+      resource. Permissions are the atomic units of access control policy.
+    tags:
+      - Core Entity
+      - Authorization
+
+  - term: Principal
+    label: Principal
+    definition: >-
+      An entity (user, group, or service account) to which roles can be assigned.
+      Principals are the subjects in authorization decisions.
+    tags:
+      - Core Entity
+      - Identity
+
+  - term: RoleAssignment
+    label: Role Assignment
+    definition: >-
+      The binding of a principal to a role within a defined scope. Role
+      assignments can be time-limited and are the mechanism by which permissions
+      are effectively granted to users.
+    tags:
+      - Core Entity
+      - Authorization
+
+  - term: Scope
+    label: Scope
+    definition: >-
+      The boundary within which a role assignment applies. Common scopes include
+      global, organization, project, and resource-level scopes.
+    tags:
+      - Authorization
+      - Multi-Tenancy
+
+  - term: RoleHierarchy
+    label: Role Hierarchy
+    definition: >-
+      An ordering of roles such that senior roles inherit the permissions of
+      junior roles. Hierarchical RBAC reduces redundancy in permission definitions.
+    tags:
+      - Advanced RBAC
+      - Authorization
+
+  - term: LeastPrivilege
+    label: Principle of Least Privilege
+    definition: >-
+      A security principle stating that a principal should be granted only the
+      minimum permissions necessary to perform its required functions. RBAC
+      enforces least privilege through role scoping.
+    tags:
+      - Security
+      - Best Practice
+
+  - term: ABAC
+    label: Attribute-Based Access Control
+    definition: >-
+      An extension of RBAC in which permissions are conditioned on attributes of
+      the subject, resource, action, or environment. ABAC policies are expressed
+      as conditions within permission definitions.
+    tags:
+      - Access Control
+      - Advanced Authorization
+
+  - term: ClusterRole
+    label: Cluster Role
+    definition: >-
+      In Kubernetes RBAC, a ClusterRole defines permissions that apply
+      cluster-wide (not scoped to a single namespace). Contrast with a
+      namespace-scoped Role.
+    tags:
+      - Kubernetes
+      - Cloud Native
+
+  - term: RoleBinding
+    label: Role Binding
+    definition: >-
+      In Kubernetes RBAC, a RoleBinding grants the permissions defined in a Role
+      to a set of subjects within a specific namespace.
+    tags:
+      - Kubernetes
+      - Cloud Native
+
+  - term: ServiceAccount
+    label: Service Account
+    definition: >-
+      A non-human identity used by applications and workloads to authenticate
+      and be assigned roles. Service accounts are a common principal type in
+      cloud and Kubernetes environments.
+    tags:
+      - Identity
+      - Cloud Native
+
+  - term: PolicyEnforcement
+    label: Policy Enforcement Point
+    definition: >-
+      The component in an authorization architecture responsible for intercepting
+      access requests and enforcing policy decisions, typically delegating
+      evaluation to a Policy Decision Point (PDP).
+    tags:
+      - Authorization Architecture
+      - Security
+
+  - term: SeparationOfDuties
+    label: Separation of Duties
+    definition: >-
+      A security control that requires multiple principals to complete sensitive
+      operations, preventing a single actor from having unchecked authority.
+      Enforced in RBAC through mutually exclusive roles.
+    tags:
+      - Security
+      - Compliance
+
+  - term: RBACaaS
+    label: RBAC as a Service
+    definition: >-
+      Cloud-based solutions that externalize RBAC policy management, providing
+      APIs and dashboards for organizations to define and enforce access control
+      policies without building custom authorization infrastructure.
+    tags:
+      - Cloud
+      - SaaS
+      - Authorization

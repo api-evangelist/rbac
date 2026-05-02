@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "rbac": "https://schema.api-evangelist.com/rbac/",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "Role": {
+      "@id": "rbac:Role",
+      "@type": "@id"
+    },
+    "Permission": {
+      "@id": "rbac:Permission",
+      "@type": "@id"
+    },
+    "RoleAssignment": {
+      "@id": "rbac:RoleAssignment",
+      "@type": "@id"
+    },
+    "id": "@id",
+    "name": "schema:name",
+    "description": "dcterms:description",
+    "permissions": {
+      "@id": "rbac:hasPermission",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "parents": {
+      "@id": "rbac:inheritsFrom",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "scope": "rbac:scope",
+    "action": "rbac:action",
+    "resource": "rbac:resource",
+    "conditions": "rbac:conditions",
+    "principalId": {
+      "@id": "rbac:principal",
+      "@type": "@id"
+    },
+    "principalType": "rbac:principalType",
+    "roleId": {
+      "@id": "rbac:assignedRole",
+      "@type": "@id"
+    },
+    "grantedBy": {
+      "@id": "rbac:grantedBy",
+      "@type": "@id"
+    },
+    "grantedAt": {
+      "@id": "rbac:grantedAt",
+      "@type": "xsd:dateTime"
+    },
+    "expiresAt": {
+      "@id": "rbac:expiresAt",
+      "@type": "xsd:dateTime"
+    },
+    "created": {
+      "@id": "dcterms:created",
+      "@type": "xsd:dateTime"
+    },
+    "modified": {
+      "@id": "dcterms:modified",
+      "@type": "xsd:dateTime"
+    }
+  }
+}
