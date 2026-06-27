@@ -58,15 +58,15 @@ common:
     name: RBAC JSON-LD Context
     description: JSON-LD context mapping RBAC vocabulary to linked data identifiers.
     url: https://raw.githubusercontent.com/api-evangelist/rbac/refs/heads/main/json-ld/rbac-context.jsonld
-  - type: Example
+  - type: Examples
     name: RBAC Role Example
     description: Example RBAC role object for a Content Editor.
     url: https://raw.githubusercontent.com/api-evangelist/rbac/refs/heads/main/examples/rbac-role-example.json
-  - type: Example
+  - type: Examples
     name: RBAC Permission Example
     description: Example RBAC permission object for publishing content.
     url: https://raw.githubusercontent.com/api-evangelist/rbac/refs/heads/main/examples/rbac-permission-example.json
-  - type: Example
+  - type: Examples
     name: RBAC Assignment Example
     description: Example RBAC role assignment binding a user to the Content Editor role.
     url: https://raw.githubusercontent.com/api-evangelist/rbac/refs/heads/main/examples/rbac-assignment-example.json
@@ -74,7 +74,7 @@ common:
     name: RBAC Vocabulary
     description: Domain vocabulary for RBAC concepts, terms, and implementation patterns.
     url: https://raw.githubusercontent.com/api-evangelist/rbac/refs/heads/main/vocabulary/rbac-vocabulary.yml
-  - type: Standard
+  - type: Standards
     name: ANSI/INCITS 359-2012 RBAC Standard
     description: The American National Standard for Role-Based Access Control.
     url: https://csrc.nist.gov/projects/role-based-access-control
