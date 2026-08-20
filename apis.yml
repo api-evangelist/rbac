@@ -30,6 +30,15 @@ url: https://raw.githubusercontent.com/api-evangelist/rbac/refs/heads/main/apis.
 tags:
   - Access Control
   - Authorization
+  - Cloud-Native
+  - Compliance
+  - Identity Management
+  - Kubernetes
+  - RBAC
+  - Security
+tags_raw:
+  - Access Control
+  - Authorization
   - Cloud Native
   - Compliance
   - Identity Management
