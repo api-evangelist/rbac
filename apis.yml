@@ -12,6 +12,17 @@ description: >-
   Cloud platforms (AWS IAM, Azure RBAC, GCP IAM) and Kubernetes all implement RBAC
   natively, making it the de facto authorization standard for enterprise and cloud-native environments.
 type: Index
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
