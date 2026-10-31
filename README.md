@@ -1,4 +1,4 @@
-# RBAC (rbac)
+# RBAC
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,70 +64,80 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Role-Based Access Control (RBAC) is a security paradigm that restricts system access based on assigned roles rather than individual user identities. Users are granted permissions through role membership, simplifying access management and ensuring the principle of least privilege. RBAC is foundational to enterprise identity, authorization, and compliance programs and is implemented across operating systems, cloud platforms, databases, and APIs.
+Role-Based Access Control (RBAC) is a security paradigm that restricts system access based on assigned roles rather than individual user identities. Users are granted permissions through role membership, simplifying access management and ensuring the principle of least privilege. RBAC is foundational to enterprise identity, authorization, and compliance programs and is implemented across operating systems, cloud platforms, databases, and APIs. The NIST/ANSI/INCITS 359-2004 standard formally defines the RBAC model across four components: Core RBAC, Hierarchical RBAC, Static Separation of Duty, and Dynamic Separation of Duty. Cloud platforms (AWS IAM, Azure RBAC, GCP IAM) and Kubernetes all implement RBAC natively, making it the de facto authorization standard for enterprise and cloud-native environments.
 
-The NIST/ANSI/INCITS 359-2004 standard formally defines the RBAC model across four components: Core RBAC, Hierarchical RBAC, Static Separation of Duty, and Dynamic Separation of Duty. Cloud platforms (AWS IAM, Azure RBAC, GCP IAM) and Kubernetes all implement RBAC natively, making it the de facto authorization standard for enterprise and cloud-native environments.
+**Areas:** Access Control · Authorization · Cloud-Native · Compliance · Identity and Access Management · Kubernetes · RBAC · Security
 
-**URL:** [Visit APIs.json](https://raw.githubusercontent.com/api-evangelist/rbac/refs/heads/main/apis.yml)
+## RBAC on APIs.io
 
-## Scope
+Everything profiled for RBAC is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/rbac/](https://apis.io/providers/rbac/)** — or go straight to one of the APIs or properties below.
 
-- **Type:** Index
-- **Position:** Consuming
-- **Access:** 3rd-Party
+### Published properties
 
-## Tags
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Access Control, Authorization, Cloud Native, Compliance, Identity Management, Kubernetes, RBAC, Security
+#### JSON Schema (3)
 
-## JSON Schemas
+The data models the API reads and writes.
 
-| Schema | Description |
-|--------|-------------|
-| [RBAC Role Schema](json-schema/rbac-role.json) | JSON Schema for an RBAC role |
-| [RBAC Permission Schema](json-schema/rbac-permission.json) | JSON Schema for an RBAC permission |
-| [RBAC Assignment Schema](json-schema/rbac-assignment.json) | JSON Schema for a role assignment |
+- [RBAC Role Assignment](https://apis.io/schemas/rbac/rbac-assignment/)
+- [RBAC Permission](https://apis.io/schemas/rbac/rbac-permission/)
+- [RBAC Role](https://apis.io/schemas/rbac/rbac-role/)
 
-## JSON Structures
+#### JSON Structure (3)
 
-| Structure | Description |
-|-----------|-------------|
-| [RBAC Role Structure](json-structure/rbac-role-structure.json) | Field-level documentation for the role object |
-| [RBAC Permission Structure](json-structure/rbac-permission-structure.json) | Field-level documentation for the permission object |
-| [RBAC Assignment Structure](json-structure/rbac-assignment-structure.json) | Field-level documentation for the role assignment object |
+Data models expressed in JSON Structure.
 
-## JSON-LD Context
+- [Rbac Assignment Structure](https://apis.io/json-structure/rbac/rbac-assignment-structure/)
+- [Rbac Permission Structure](https://apis.io/json-structure/rbac/rbac-permission-structure/)
+- [Rbac Role Structure](https://apis.io/json-structure/rbac/rbac-role-structure/)
 
-| Context | Description |
-|---------|-------------|
-| [RBAC Context](json-ld/rbac-context.jsonld) | JSON-LD context mapping RBAC vocabulary to linked data identifiers |
+#### JSON-LD (1)
 
-## Examples
+Linked-data contexts for the provider's vocabulary.
 
-| Example | Description |
-|---------|-------------|
-| [RBAC Role Example](examples/rbac-role-example.json) | Example role object (Content Editor) |
-| [RBAC Permission Example](examples/rbac-permission-example.json) | Example permission object (Publish Content) |
-| [RBAC Assignment Example](examples/rbac-assignment-example.json) | Example role assignment binding a user to a role |
+- [Rbac Context](https://apis.io/jsonld/rbac/rbac-context/)
 
-## Vocabulary
+#### Vocabulary (1)
 
-| Vocabulary | Description |
-|------------|-------------|
-| [RBAC Vocabulary](vocabulary/rbac-vocabulary.yml) | Domain vocabulary covering RBAC concepts, terms, and implementation patterns |
+The provider's domain terms, defined.
 
-## Standards & References
+- [RBAC Vocabulary](https://apis.io/vocabularies/rbac/rbac-vocabulary/)
 
-- [ANSI/INCITS 359 RBAC Standard (NIST)](https://csrc.nist.gov/projects/role-based-access-control)
-- [Kubernetes RBAC Authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
-- [AWS IAM RBAC Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
+#### Examples (3)
 
-## Timestamps
+Example requests and responses.
 
-- **Created:** 2025-01-01
-- **Modified:** 2026-05-02
+- [Rbac Assignment Example](https://apis.io/examples/rbac/rbac-assignment-example/)
+- [Rbac Permission Example](https://apis.io/examples/rbac/rbac-permission-example/)
+- [Rbac Role Example](https://apis.io/examples/rbac/rbac-role-example/)
 
-## Maintainers
+#### Governance rules (1)
 
-**FN:** Kin Lane  
-**Email:** kin@apievangelist.com
+Spectral rulesets for the provider's contracts.
+
+- [RBAC — jsonschema rules](https://apis.io/rules/rbac/rbac-jsonschema-spectral-rules/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Documentation](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
+
+## API Evangelist rating
+
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
+
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for RBAC: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/rbac/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
